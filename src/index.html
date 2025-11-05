@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Larry Precious | Gospel Music Dashboard</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/larry-favicon.png" />
+  <link rel="shortcut icon" href="img/WhatsApp Image 2025-11-05 at 20.41.15_67f7b78c.jpg" type="image/x-icon">
+
+  <!-- Tailwind CSS -->
+  <link href="./output.css" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      AOS.init({ duration: 1000 });
+    });
+  </script>
+</head>
+
+<body class="bg-slate-950 text-gray-100 font-sans overflow-x-hidden scroll-smooth">
+
+  <!-- ===== HEADER ===== -->
+  <header class="bg-slate-900 shadow-md sticky top-0 z-50 backdrop-blur bg-opacity-90">
+    <div class="flex items-center justify-between p-4 md:px-12">
+      <h1 class="text-2xl font-extrabold text-amber-400 tracking-wide">
+       <a href="index.html">Larry</a> <span class="text-white"><a href="index.html">Precious</a></span>
+      </h1>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex gap-8 font-medium">
+        <a href="#home" class="hover:text-amber-400 transition">Home</a>
+        <a href="#about" class="hover:text-amber-400 transition">About</a>
+        <a href="#music" class="hover:text-amber-400 transition">Music</a>
+        <a href="#contact" class="hover:text-amber-400 transition">Contact</a>
+      </nav>
+
+      <!-- Social Media Icons -->
+      <div class="hidden md:flex gap-4 text-xl">
+        <i class="fa-brands fa-facebook hover:text-blue-500 transition"></i>
+        <i class="fa-brands fa-whatsapp hover:text-green-500 transition"></i>
+        <i class="fa-brands fa-tiktok hover:text-gray-300 transition"></i>
+        <i class="fa-brands fa-instagram hover:text-pink-500 transition"></i>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="text-2xl md:hidden focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden flex-col bg-slate-800 text-center md:hidden">
+      <a href="#home" class="py-3 hover:text-amber-400">Home</a>
+      <a href="#about" class="py-3 hover:text-amber-400">About</a>
+      <a href="#music" class="py-3 hover:text-amber-400">Music</a>
+      <a href="#contact" class="py-3 hover:text-amber-400">Contact</a>
+      <div class="flex justify-center gap-5 py-4 text-xl">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="relative h-[90vh] flex items-center justify-center text-center overflow-hidden">
+    <video autoplay loop muted playsinline class="absolute w-full h-full object-cover opacity-40">
+      <source src="https://videos.pexels.com/video-files/5646481/5646481-hd_1920_1080_25fps.mp4" type="video/mp4">
+    </video>
+
+    <div class="relative z-10 px-4" data-aos="fade-up">
+      <h2 class="text-4xl md:text-6xl font-extrabold text-amber-400 drop-shadow-lg">
+        Spreading the Gospel Through Music 🎵
+      </h2>
+      <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+        Experience the presence of God through songs of worship, hope, and salvation.
+      </p>
+      <button class="mt-6 px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold rounded-full transition-transform hover:scale-105">
+       <a href="#music"> Listen Now</a>
+      </button>
+    </div>
+      <!-- Floating Up Button -->
+<div class="fixed bottom-24 right-4 bg-slate-700 text-white p-4 rounded-2xl shadow-lg flex items-center justify-center z-50">
+  <a href="#home">
+    <i class="fa-solid fa-up-long fa-bounce text-2xl"></i>
+  </a>
+</div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="py-20 px-6 md:px-16 flex flex-col md:flex-row items-center gap-10 bg-slate-900/40">
+    <img src="img/WhatsApp Image 2025-11-05 at 20.41.15_67f7b78c.jpg" alt="Larry Precious"
+      class="w-full md:w-1/3 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-500" data-aos="fade-right">
+    <div class="md:w-2/3" data-aos="fade-left">
+      <h3 class="text-3xl font-bold text-amber-400 mb-4">About Larry Precious</h3>
+      <p class="text-gray-300 leading-relaxed">
+        Larry Precious is a passionate gospel singer, songwriter, and worship leader whose music
+        inspires hearts and uplifts souls. With a divine mission to spread the message of Christ,
+        Larry combines soulful melodies with powerful lyrics that touch lives across the globe.
+      </p>
+      <div class="mt-6 flex gap-4">
+        <a href="#music" class="px-6 py-2 bg-amber-500 text-slate-900 font-semibold rounded-full hover:bg-amber-400 transition">Explore Music</a>
+        <a href="#contact" class="px-6 py-2 border border-amber-500 text-amber-400 font-semibold rounded-full hover:bg-amber-500 hover:text-slate-900 transition">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MUSIC SECTION ===== -->
+  <section id="music" class="px-6 md:px-20 py-20">
+    <h3 class="text-3xl font-bold mb-10 text-amber-400 text-center" data-aos="fade-up">
+      Featured Tracks
+    </h3>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <!-- Track 1 -->
+      <div class="bg-slate-900 p-5 rounded-2xl shadow-lg hover:shadow-amber-500/30 transition-all" data-aos="zoom-in">
+        <img src="https://images.pexels.com/photos/167092/pexels-photo-167092.jpeg" alt="Track cover" class="rounded-xl mb-4">
+        <h4 class="font-bold text-lg mb-2">Heaven’s Light</h4>
+        <p class="text-gray-400 text-sm">An uplifting tune filled with divine hope and praise.</p>
+        <audio controls class="mt-4 w-full rounded-lg bg-slate-800">
+          <source src="music/heavens-light.mp3" type="audio/mp3">
+        </audio>
+      </div>
+
+      <!-- Track 2 -->
+      <div class="bg-slate-900 p-5 rounded-2xl shadow-lg hover:shadow-amber-500/30 transition-all" data-aos="zoom-in">
+        <img src="https://images.pexels.com/photos/1916819/pexels-photo-1916819.jpeg" alt="Track cover" class="rounded-xl mb-4">
+        <h4 class="font-bold text-lg mb-2">Grace and Glory</h4>
+        <p class="text-gray-400 text-sm">A soulful melody celebrating God’s mercy and love.</p>
+        <audio controls class="mt-4 w-full rounded-lg bg-slate-800">
+          <source src="music/grace-and-glory.mp3" type="audio/mp3">
+        </audio>
+      </div>
+
+      <!-- Track 3 -->
+      <div class="bg-slate-900 p-5 rounded-2xl shadow-lg hover:shadow-amber-500/30 transition-all" data-aos="zoom-in">
+        <img src="https://images.pexels.com/photos/164879/pexels-photo-164879.jpeg" alt="Track cover" class="rounded-xl mb-4">
+        <h4 class="font-bold text-lg mb-2">ALABARA(POWERFUL GOD)</h4>
+        <p class="text-gray-400 text-sm">A worship song that connects your soul to the Holy Spirit.</p>
+        <audio controls class="mt-4 w-full rounded-lg bg-slate-800">
+          <source src="music/spirit-flow.mp3" type="audio/mp3">
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="py-20 px-6 md:px-20 bg-slate-900/40">
+    <h4 class="text-3xl font-bold text-center text-amber-400 mb-10" data-aos="fade-up">Contact <span class="text-white">Larry Precious</span></h4>
+
+    <form class="max-w-xl mx-auto bg-slate-900 p-8 rounded-2xl shadow-lg" data-aos="fade-up">
+      <div class="mb-4">
+        <label class="block mb-2 text-sm font-semibold">Name</label>
+        <input type="text" placeholder="Enter your name" class="w-full p-3 rounded-lg bg-slate-800 border border-gray-700 focus:outline-none focus:border-amber-500" required>
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2 text-sm font-semibold">Email</label>
+        <input type="email" placeholder="Enter your email" class="w-full p-3 rounded-lg bg-slate-800 border border-gray-700 focus:outline-none focus:border-amber-500" required>
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2 text-sm font-semibold">Message</label>
+        <textarea rows="4" placeholder="Write your message..." class="w-full p-3 rounded-lg bg-slate-800 border border-gray-700 focus:outline-none focus:border-amber-500" required></textarea>
+      </div>
+      <button type="submit" class="w-full py-3 bg-amber-500 text-slate-900 font-semibold rounded-lg hover:bg-amber-400 transition-transform hover:scale-105">
+        Send Message
+      </button>
+    </form>
+  </section>
+   <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-slate-50 dark:bg-slate-950 text-center hidden-section">
+    <h2 class="font-bold text-3xl mb-4 text-amber-500">Another way to Contact Larry Precious</h2>
+    <p class="text-gray-600 dark:text-gray-300 mb-10">📩 Get in touch via email or social links below.</p>
+    <p class="text-slate-600 dark:text-slate-300">📍 <a class="hover:text-orange-400" href="">Lagos, Nigeria</a></p>
+    <p class="text-slate-600 dark:text-slate-300">📧 larryprecious175@gmail.com</p>
+    <p class="text-slate-600 dark:text-slate-300">📞 +234 806 268 2056 <a href="tel:+2349050766830" class="text-blue-500 hover:underline">Call Me</a></p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-slate-900 text-gray-400 py-8 text-center border-t border-slate-700">
+    <p>© 2025 Larry Precious — All Rights Reserved.</p>
+    <div class="flex justify-center gap-4 mt-4 text-xl">
+      <i class="fa-brands fa-facebook hover:text-blue-500 transition"></i>
+      <i class="fa-brands fa-whatsapp hover:text-green-500 transition"></i>
+      <i class="fa-brands fa-tiktok hover:text-gray-300 transition"></i>
+      <i class="fa-brands fa-instagram hover:text-pink-500 transition"></i>
+    </div>
+  </footer>
+
+  <!-- ===== MOBILE MENU TOGGLE ===== -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuBtn.innerHTML = mobileMenu.classList.contains('hidden')
+        ? '<i class="fa-solid fa-bars"></i>'
+        : '<i class="fa-solid fa-xmark"></i>';
+    });
+  </script>
+</body>
+</html>
